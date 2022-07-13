@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./screens/Home/Home";
+import AbsenceForm from "./screens/AbsenceForm/AbsenceForm";
+import { users } from "./constants/USERS";
+import { abscences } from "./constants/ABSCENCES";
+import { vacations } from "./constants/VACATIONS";
 
 function App() {
+  const [isForm, setIsForm] = useState(false);
+  const [absences, setAbsences] = useState(abscences);
+  const [usersList, setUsersList] = useState(users);
+  const [vacationsList, setVacationsList] = useState(vacations);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar setIsForm={setIsForm} />
+      {!isForm && (
+        <Home
+          setIsForm={setIsForm}
+          absence={absences[0]}
+          user={usersList[0]}
+          vacation={vacationsList[0]}
+        />
+      )}
+      {isForm && (
+        <AbsenceForm
+          setAbsences={setAbsences}
+          absences={absences}
+          user={users[0]}
+          setIsForm={setIsForm}
+        />
+      )}
+    </>
   );
 }
 

@@ -1,0 +1,17 @@
+.title {
+  font-size: 0.8em;
+}
+
+.vacations {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 0.5em;
+  }
+
+  .vacations {
+    font-size: 0.7em;
+  }
+}

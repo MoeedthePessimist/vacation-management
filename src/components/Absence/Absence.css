@@ -1,0 +1,24 @@
+.absence-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.type {
+  color: #3396ff;
+}
+
+.duration-to-from,
+.duration,
+.status {
+  color: #808080;
+  font-size: 0.8em;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

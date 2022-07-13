@@ -1,0 +1,97 @@
+.absence-form-container-desktop {
+  padding: 1rem 3rem;
+}
+
+.absence-form-container-mobile {
+  padding: 1rem 2rem;
+}
+
+.absence-form-header {
+  color: #484848;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #e4e4e4;
+  margin: 1rem 0;
+}
+
+.absence-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.absence-form label {
+  color: #484848;
+  font-size: 0.7em;
+}
+
+.absence-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.absence-form input {
+  color: #808080;
+  font-size: 0.7em;
+  padding: 0.5rem;
+  border-width: 0.5px;
+  outline: none;
+  border-color: #d0d0d0;
+  border-radius: 5px;
+}
+
+.absence-form-field-half {
+  width: 60%;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.member {
+  font-size: 0.6em;
+}
+
+select#type,
+select#team {
+  color: #808080;
+  font-size: 0.7em;
+  padding: 0.5rem;
+  outline: none;
+  border-color: #d0d0d0;
+  border-radius: 5px;
+}
+
+.controls {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls > button {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  border: none;
+}
+
+.submit-btn {
+  background: #5bb85d;
+  color: #f4f4f4;
+}

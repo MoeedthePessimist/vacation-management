@@ -1,0 +1,9 @@
+export const PRIMARY_TYPOGRAPHY = "#484848";
+export const SECONDARY_TYPOGRAPHY = "#808080";
+export const PRIMARY_ICONS = "#10b982";
+export const SECONDARY_ICONS = "#f9d253";
+export const MENU_1 = "#414956";
+export const MENU_2 = "#3a393c";
+export const PRIMARY_BTN = "#0384c6";
+export const SECONDARY_BTN = "#5bb85d";
+export const NAVBAR_BG = "#f4f4f4";

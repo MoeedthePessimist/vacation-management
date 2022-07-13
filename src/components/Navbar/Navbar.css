@@ -1,0 +1,178 @@
+.navbar {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.hamburger-icon-container {
+  cursor: pointer;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links {
+  display: flex;
+  position: static;
+  gap: 20px;
+}
+
+.navbar-link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #484848;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.8em;
+}
+
+.navbar-link:hover {
+  color: #808080;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.add-drop-down {
+  position: relative;
+  overflow: hidden;
+}
+
+.add-menu {
+  position: absolute;
+  z-index: 3;
+  width: 120px;
+  padding: 0.5rem 0.5rem;
+  background-color: #3a393c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  gap: 15px;
+  top: 31px;
+  right: 0;
+}
+
+.add-menu-visible {
+  position: relative;
+  overflow: visible;
+}
+
+.avatar-drop-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-drop-down-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.profile-menu {
+  background: #414956;
+  width: 190px;
+  color: #f4f4f4;
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.user-info {
+  display: flex;
+  padding: 0 0.8rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.options {
+  width: 100%;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  gap: 15px;
+  margin: 10px 0;
+  padding: 0.3rem 1.2rem;
+}
+
+.option:hover {
+  background-color: #323842;
+}
+
+.option-text {
+  font-size: 0.6em;
+}
+
+/* mobile view */
+
+.navbar-mobile {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.navbar-links-mobile-hide {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7em;
+  position: absolute;
+  gap: 10px;
+  top: 90px;
+  padding: 0.4rem 2rem;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  align-items: flex-start;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-links-mobile-show {
+  background: #f4f4f4;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  padding: 0.4rem 1rem;
+  left: 0;
+  right: 0;
+  transform: translateX(0%);
+  align-items: flex-start;
+  transition: all 0.5s ease-in-out;
+}
